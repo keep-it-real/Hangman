@@ -1,0 +1,355 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+	background: url(img/background.jpg) no-repeat center center fixed;
+}
+
+.gameBoard
+{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.chances
+{
+	width: 150px;
+	height: 30px;
+	color: #d1b855;
+	font-size: 25px;
+}
+
+.maxim
+{
+	margin: auto;
+	padding-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.maximBox
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+	margin-bottom: 15px;
+	padding-top: 6px;
+	border: 1px solid white;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #d1b855;
+	background-color: transparent;
+	vertical-align: top;
+}
+
+.gap 
+{
+	border: none;
+	height: 1px;
+	width: 65px;
+	background-color: white;
+	margin-top: 47px;
+}
+
+.letters
+{
+	margin: auto;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	width: 70%;
+	text-align: center;
+}
+
+.letterBox
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border: 1px solid #d1b855;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	background-color: transparent;
+}
+
+.letterBox:hover
+{
+	color: #d1b855;
+	border: 1px solid white;
+}
+
+.letterBox:disabled
+{
+	cursor: default;
+	visibility: hidden;
+}
+
+.btnProverbs, .btnQuotes
+{
+	margin: auto;
+	margin-bottom: 10px;
+	width: 445px;
+	padding: 15px 40px;
+	cursor: pointer;
+	color: #d1b855;
+	background-color: transparent;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	transition: 0.9s;
+	border-color: white;
+	display: block;
+}
+
+.btnProverbs:hover, .btnQuotes:hover
+{
+	border-radius: 30px;
+}
+
+.info
+{
+	display: block;
+	z-index: 1;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 27%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(img/background.jpg) no-repeat center center;
+	border-radius: 30px;
+	border: 5px solid #d1b855;
+	box-shadow: 0px 0px 229px 47px rgba(255,255,255,0.27);
+}
+
+.gameOver
+{
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color: #d1b855;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.text 
+{
+	width: 400px;
+	top: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+.btnOk
+{
+	display: block;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+	padding: 15px 45px;
+	cursor: pointer;
+	color: #d1b855;
+	background-color: transparent;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	transition: 0.9s;
+	border: 1px solid white;
+}
+
+.btnOk:hover 
+{
+	border-radius: 30px;
+}
+
+@media (max-width: 1580px)
+{
+	.gameBoard
+	{
+		padding-top: 40px;
+	}
+
+	.chances
+	{
+		font-size: 20px;
+	}
+
+	.maxim
+	{
+		padding-top: 40px;
+	}
+
+	.maximBox
+	{
+		width: 40px;
+		height: 40px;
+		margin: 1.5px;
+		margin-bottom: 10px;
+		padding-top: 4px;
+		font-size: 25px;
+	}
+
+	.gap 
+	{
+		height: 1px;
+		width: 55px;
+		margin-top: 37px;
+	}
+
+	.letters
+	{
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	.letterBox
+	{
+		width: 40px;
+		height: 40px;
+		margin: 7px;
+		font-size: 15px;
+	}
+	
+	.btnProverbs, .btnQuotes
+	{
+		margin-bottom: 7px;
+		width: 420px;
+		padding: 10px 30px;
+		cursor: pointer;
+		font-size: 17px;
+	}
+
+	.info
+	{
+		z-index: 1;
+		width: 450px;
+		height: 250px;
+		top: 25%;
+		border: 3px solid #d1b855;
+	}
+
+	.gameOver
+	{
+		top: 30px;
+		font-size: 30px;
+	}
+
+	.text 
+	{
+		width: 300px;
+		top: 90px;
+		font-size: 20px;
+	}
+
+	.btnOk
+	{
+		bottom: 30px;
+		padding: 10px 35px;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1030px)
+{
+	.gameBoard
+	{
+		width: 90%;
+	}
+	
+	.letters
+	{
+		width: 80%;
+	}
+	
+	.info
+	{
+		top: 30%;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.gameBoard
+	{
+		padding-top: 20px;
+	}
+	
+	.letters
+	{
+		width: 90%;
+	}
+
+	.maxim
+	{
+		padding-top: 20px;
+	}
+	
+	.letters
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	.btnProverbs, .btnQuotes
+	{
+		width: 320px;
+		padding: 7px 20px;
+		font-size: 15px;
+	}
+	
+	.info
+	{
+		width: 350px;
+		height: 180px;
+	}
+	
+	.gameOver
+	{
+		top: 20px;
+		font-size: 25px;
+	}
+
+	.text 
+	{
+		width: 270px;
+		top: 60px;
+		font-size: 18px;
+	}
+	
+	.btnOk
+	{
+		bottom: 20px;
+		padding: 7px 30px;
+		font-size: 13px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
