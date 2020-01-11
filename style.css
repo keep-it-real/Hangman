@@ -291,23 +291,40 @@ html, body
 {
 	.gameBoard
 	{
-		padding-top: 20px;
+		width: 100%;
+		padding-top: 10px;
 	}
 	
 	.letters
 	{
-		width: 90%;
+		width: 100%;
 	}
 
 	.maxim
 	{
-		padding-top: 20px;
+		width: 100%;
+		padding-top: 10px;
+	}
+	
+	.maximBox
+	{
+		width: 30px;
+		height: 30px;
+		padding-top: 3px;
+		font-size: 20px;
+	}
+	
+	.gap 
+	{
+		height: 1px;
+		width: 38px;
+		margin-top: 29px;
 	}
 	
 	.letters
 	{
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	
 	.btnProverbs, .btnQuotes
